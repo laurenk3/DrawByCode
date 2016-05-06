@@ -8,6 +8,7 @@ public class DrawByCode extends AppCompatActivity {
 
     DrawingArea drawBox; // All we see here is a typical widget-type definition. The custom class
                          //   for DrawingArea handles all of the drawing details.
+    DrawingArea paintBrush;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,6 +16,6 @@ public class DrawByCode extends AppCompatActivity {
         setContentView(R.layout.activity_draw_by_code);
 
         drawBox = (DrawingArea) findViewById(R.id.drawBox); // Just like adding a widget.
-
+        paintBrush = (DrawingArea)findViewById(R.id.drawBox);
     }
 }
